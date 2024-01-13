@@ -25,11 +25,12 @@ body{
     height: 100%;
 } */
 
-section{
+.section-1{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 2vh 3vh;
     background-color: var(--background-color);
+    /* background-color: #FE330A; */
 }
 
 /* -----Navigation Bar----- */
@@ -64,6 +65,7 @@ section{
     border-radius:1.875rem;
     overflow: hidden;
     cursor: pointer;
+    font-weight: 100;
 }
 
 .nav-btn a{
@@ -142,5 +144,32 @@ section{
     margin-right: 20px;
 }
 
+.video-container{
+    margin-top: 50px;
+    width: 100%;
+    height: 80vh;
+}
 
+.video-container video{
+    width: 100%;
+    border-radius: 20px;
+}
 
+.hero-animation-shape{
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    right: -30px;
+    top: 70vh;
+    filter: blur(20px);
+}
+
+.shape-1{
+    width: 66vw;
+    height: 36vw;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    filter: blur(20px);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
