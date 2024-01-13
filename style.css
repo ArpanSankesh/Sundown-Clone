@@ -28,6 +28,7 @@ body{
 section{
     width: 100%;
     height: 100vh;
+    padding: 2vh 3vh;
     background-color: var(--background-color);
 }
 
@@ -36,16 +37,16 @@ section{
 #navbar{
     position: relative;
     width: 100%;
-    height: 6rem;
-    padding: 2vw 3vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+ 
 .logo{
     padding: 10px;
     flex-basis: 60%;
 }
+
 .nav-buttons{
     flex-basis: 40%;
     display: flex;
@@ -55,11 +56,91 @@ section{
 }
   
 .nav-btn{
-    /* font-size: 1rem; */
-    padding: 10px 20px;
+    position: relative;
+    font-size: 1rem;
+    padding: 12px 24px;
     background-color: transparent;
-    border: 1px solid #8a8a8a89;
-    border-radius:1.875rem ;
+    border: 1px solid #00000057;
+    border-radius:1.875rem;
+    overflow: hidden;
+    cursor: pointer;
 }
+
+.nav-btn a{
+    text-decoration: none;
+    color: #000;
+    z-index: 999;
+    position:relative;
+    transition: all ease 0.4s;
+}
+
+.nav-btn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    left: 0;
+    bottom:-100%;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+
+.nav-btn:hover:after{
+    bottom: 0;
+    border-radius: 0;
+    color: #fff;
+}
+
+.nav-btn:hover a {
+    color: #fff;
+}
+
+#hero{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #00000057;
+    padding-bottom: 50px;
+}
+
+.left{ 
+    flex-basis: 28%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.left h2{
+    font-size: 1.7rem;
+    line-height: 1.8vw;
+    letter-spacing: -1px;
+    padding-right: 20px;
+}
+
+.right{
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+
+.right h1{
+    font-size: 10rem;
+    line-height: 9vw;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    text-transform: uppercase;
+    letter-spacing: -0.5vw;
+    text-align: end;
+    margin-right: 20px;
+}
+
 
 
