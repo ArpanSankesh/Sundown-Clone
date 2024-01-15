@@ -165,6 +165,7 @@ body{
 }
 
 .shape-1{
+    position: absolute;
     width: 66vw;
     height: 36vw;
     background-color: var(--accent-color);
@@ -174,6 +175,7 @@ body{
     border-bottom-left-radius: 50%;
 }
 .shape-2{
+    position: absolute;
     width: 30vw;
     height: 30vw;
     background-color: var(--accent-color);
@@ -181,8 +183,10 @@ body{
     filter: blur(20px);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+    animation: anime-1 ease infinite 3s alternate;
 }
 .shape-3{
+    position: absolute;
     width: 30vw;
     height: 30vw;
     background-color: var(--accent-color);
@@ -190,4 +194,34 @@ body{
     filter: blur(20px);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+    animation: anime-2 linear infinite 3s alternate;
+}
+
+@keyframes anime-1 {
+    from{
+        transform: translate(-10%,10%)
+    }
+    to{
+        transform: translate(10%,-10%)
+    }
+}
+
+
+@keyframes anime-2 {
+    from{
+        transform: translate(10%,-10%)
+    }
+    to{
+        transform: translate(-10%,10%)
+    }
+}
+
+
+@keyframes anime-3 {
+    from{
+        transform: translate(-10%,-10%)
+    }
+    to{
+        transform: translate(0,0)
+    }
 }
