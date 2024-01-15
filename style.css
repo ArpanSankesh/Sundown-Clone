@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing:border-box;
     font-family: 'NeueHaasDisplay-Mediu';
+    
 }
 
 body{
@@ -20,17 +21,16 @@ body{
     height: 100%;
 }
 
-/* #main{
+#main{
     width: 100%;
     height: 100%;
-} */
+}
 
 .section-1{
     width: 100%;
     min-height: 100vh;
     padding: 2vh 3vh;
     background-color: var(--background-color);
-    /* background-color: #FE330A; */
 }
 
 /* -----Navigation Bar----- */
@@ -167,6 +167,24 @@ body{
 .shape-1{
     width: 66vw;
     height: 36vw;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    filter: blur(20px);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.shape-2{
+    width: 30vw;
+    height: 30vw;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    filter: blur(20px);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.shape-3{
+    width: 30vw;
+    height: 30vw;
     background-color: var(--accent-color);
     border-radius: 50%;
     filter: blur(20px);
