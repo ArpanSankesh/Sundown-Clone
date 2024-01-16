@@ -22,8 +22,10 @@ body{
 }
 
 #main{
+    position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .section-1{
@@ -148,20 +150,25 @@ body{
     margin-top: 50px;
     width: 100%;
     height: 80vh;
+    position: relative;
+    
 }
 
 .video-container video{
     width: 100%;
     border-radius: 20px;
+    z-index: 998;
+    position: relative;
 }
 
 .hero-animation-shape{
     position: absolute;
     width: 46vw;
     height: 36vw;
-    right: -30px;
+    right: 18px;
     top: 70vh;
-    filter: blur(20px);
+    filter: blur(30px);
+    z-index: 8;
 }
 
 .shape-1{
@@ -173,6 +180,7 @@ body{
     filter: blur(20px);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+    /* transform:rotateY('30deg'); */
 }
 .shape-2{
     position: absolute;
@@ -183,7 +191,7 @@ body{
     filter: blur(20px);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-    animation: anime-1 ease infinite 3s alternate;
+    animation: anime-1 ease infinite 5s alternate;
 }
 .shape-3{
     position: absolute;
@@ -194,25 +202,26 @@ body{
     filter: blur(20px);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-    animation: anime-2 linear infinite 3s alternate;
+    animation: anime-2 linear infinite 5s alternate ;
 }
 
 @keyframes anime-1 {
     from{
-        transform: translate(-10%,10%)
+        transform: translate(25%,-5%)
     }
     to{
-        transform: translate(10%,-10%)
+        transform: translate(0%,-15%)
     }
 }
 
 
 @keyframes anime-2 {
     from{
-        transform: translate(10%,-10%)
+        transform: translate(0,5%)
     }
     to{
-        transform: translate(-10%,10%)
+        
+        transform: translate(-20%,20%);
     }
 }
 
