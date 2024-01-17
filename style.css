@@ -247,6 +247,7 @@ body {
     height: 100%;
     display: inline-block;
     white-space: nowrap;
+    animation: 15s move linear infinite ;
     
 }
 
@@ -264,4 +265,14 @@ body {
     margin: 1rem ;
     padding: 40px;
 
+}
+
+@keyframes move {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    
+    transform: translateX(-100%);
+  }
 }
