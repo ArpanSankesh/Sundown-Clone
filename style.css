@@ -2,6 +2,10 @@
   font-family: "NeueHaasDisplay-Mediu";
   src: url("font/64d3dd9edfb41666c35b15bf_NeueHaasDisplay-Mediu\ \(2\).ttf");
 }
+@font-face {
+  font-family: "NeueHaasDisplay-Light";
+  src: url("font/NeueHaasDisplayLight.ttf");
+}
 
 :root {
   --background-color: #efeae3;
@@ -302,6 +306,8 @@ body {
   padding: 5vw;
   font-size: 2.75rem;
   line-height: 4rem;
+  position: relative;
+  z-index: 997;
 }
 
 
@@ -309,6 +315,7 @@ body {
   width: 100%;
   height: 100%;
   flex-basis: 35%;
+  
   /* background-color: #fe330a;   */
 }
 
@@ -322,9 +329,10 @@ body {
 }
 
 .right-container-pg2 p{
-  font-weight: 100;
-  color: #000000cc;
+  font-weight: 550;
   line-height: 1.2rem;
+  font-family: "NeueHaasDisplay-Light";
+  
 }
 
 .right-container-pg2 img{
@@ -333,4 +341,31 @@ body {
   margin-bottom: 40px;
   border-radius: 0.5rem;
   
+}
+.pg2-animation {
+  position: absolute;
+  width: 46vw;
+  height: 36vw;
+  left: 20vw;
+  top: 70vh;
+  filter: blur(30px);
+  z-index: 8;
+}
+
+.pg2-shape {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  background: linear-gradient(var(--accent-color), orangered);
+  border-radius: 50%;
+  filter: blur(10px);
+  animation: page2anime ease infinite 2s alternate;
+}
+@keyframes page2anime {
+  from {
+    transform: translate(5%, -15%);
+  }
+  to {
+    transform: translate(0%, 5%);
+  }
 }
