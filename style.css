@@ -5,11 +5,13 @@
 @font-face {
   font-family: "NeueHaasDisplay-Light";
   src: url("font/NeueHaasDisplayLight.ttf");
+  font-weight: 100;
 }
 
 :root {
   --background-color: #efeae3;
   --accent-color: #fe330a;
+  --sec3-hover: #FF9831;
 }
 
 * {
@@ -31,7 +33,7 @@ body {
   overflow: hidden;
 }
 
-.section-1 {
+section {
   width: 100%;
   min-height: 100vh;
   padding: 2vh 3vh;
@@ -151,6 +153,7 @@ body {
 
 .video-container {
   margin-top: 50px;
+  margin-bottom: 100px;
   width: 100%;
   /* height: 10vw; */
   position: relative;
@@ -228,12 +231,12 @@ body {
 
 /* ---------------SECTION-2----------------- */
 
-.section-2{
+/* .section-2{
     width: 100%;
     min-height: 100vh;
     padding-top: 6vw;
     background-color: var(--background-color);
-}
+} */
 
 .moving-texts{
     width: 100%;
@@ -348,7 +351,7 @@ body {
   width: 46vw;
   height: 36vw;
   left: 20vw;
-  top: 70vh;
+  bottom: -15vh;
   filter: blur(30px);
   z-index: 8;
 }
@@ -360,13 +363,81 @@ body {
   background: linear-gradient(var(--accent-color), orangered);
   border-radius: 50%;
   filter: blur(10px);
-  animation: page2anime ease infinite 2s alternate;
+  animation: page2anime ease infinite 10s alternate;
 }
 @keyframes page2anime {
   from {
-    transform: translate(5%, -15%);
+    transform: translate(25%, -15%);
   }
   to {
-    transform: translate(0%, 5%);
+    transform: translate(-15%, 30%);
   }
+}
+
+/* ----------------------------Section-3---------------------- */
+.section-3{
+  padding: 0;
+}
+.featured-projects_section{
+  width: 100%;
+  min-height: 100vh;
+}
+
+.featured-heading{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 80px;
+  padding: 0 2vw;
+}
+
+.featured-heading p{
+  font-family: 'NeueHaasDisplay-Light';
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.bullet-point{
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.featured-projects{
+  width: 100%;
+  
+}
+
+.project{
+  width: 100%;
+  height: 15vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  transition: 0.3s linear ;
+}
+
+.project h1{
+  font-size: 3rem;
+}
+
+.project-for{
+  text-align: end;
+}
+
+.project-for p:nth-child(1){
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+.project-for p:nth-child(2){
+  font-family: 'NeueHaasDisplay-Light' ;
+  font-size: 0.9rem;
+}
+
+.project:hover{
+  background-color: var(--sec3-hover);
 }
