@@ -292,6 +292,7 @@ body {
   justify-content: space-between;
   margin-top: 3vw;
   padding: 0 10px;
+  position: relative;
   
 }
 
