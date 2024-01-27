@@ -360,17 +360,18 @@ section {
   position: absolute;
   width: 40vw;
   height: 40vw;
-  background: linear-gradient(var(--accent-color), orangered);
+  background: linear-gradient(60deg, var(--accent-color), rgb(255, 136, 0));
   border-radius: 50%;
   filter: blur(10px);
-  animation: page2anime ease infinite 10s alternate;
+  animation: page2anime ease-in-out infinite 4s alternate;
 }
 @keyframes page2anime {
   from {
-    transform: translate(25%, -15%);
+    transform: translate(10%, -10%) skew(0);
   }
   to {
-    transform: translate(-15%, 30%);
+    filter: blur(30px);
+    transform: translate(-10%,10%) skew(-10deg);
   }
 }
 
@@ -406,27 +407,31 @@ section {
 }
 
 .featured-projects{
-  width: 100%;
-  
+  width: 100%; 
+  position: relative;
 }
 
 .project{
   width: 100%;
   height: 15vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2vw;
+  overflow: hidden;
   transition: 0.3s linear ;
 }
 
 .project h1{
   font-size: 3rem;
+  z-index: 12;
 }
 
 .project-for{
   text-align: end;
+  z-index: 12;
 }
 
 .project-for p:nth-child(1){
@@ -438,6 +443,37 @@ section {
   font-size: 0.9rem;
 }
 
-.project:hover{
-  background-color: var(--sec3-hover);
+ .project .overlay{
+  width: 100%;
+  height: 15vh;
+  background-color: #FF9831;
+  position: absolute;
+  top: -15vh;
+  left: 0;
+  transition: 0.2s;
+ }
+
+.project:hover .overlay{
+  top: 0;
 }
+
+.all-project-btn{
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin-top: 5rem;
+  margin-left: 2vw;
+  outline: none;
+  border:  1px solid #00000095;
+  font-size: 1rem;
+}
+
+.all-project-btn h3{
+  margin-right: 10px;
+  font-weight: 100;
+}
+
+
