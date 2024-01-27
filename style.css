@@ -479,13 +479,13 @@ section {
 #fixed-images{
   width: 23vw;
   height: 30vw;
-  background-color: red;
   border-radius: 10px;
   position: fixed;
   z-index: 9999;
   right: 390px;
   top: 190px;
   display: none;
+  background-size: cover;
 }
 
 
