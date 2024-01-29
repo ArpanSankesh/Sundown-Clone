@@ -23,3 +23,5 @@ project.forEach(function(e){
         fixedImages.style.backgroundImage = `url(${image})`;
     });
 });
+
+
