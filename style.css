@@ -527,6 +527,7 @@ section{
   width: 100%;
   height: 60vh;
   background-color: var(--background-color);
+  padding:  14vw 2vw;
 }
 
 .swiper {
@@ -535,33 +536,26 @@ section{
 }
 
 .swiper-slide {
+ 
   text-align: center;
-  font-size: 18px;
-  background: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  color: #000000b5;
+  border-left: 1px solid #000;
+}
+
+.swiper-img{
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-bottom:50px ;
 }
-
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 60px;
 }
-
 .swiper-slide {
-  width: 60%;
+  width: 30%;
+  height: 300px;
 }
-
-.swiper-slide:nth-child(2n) {
-  width: 40%;
-}
-
-.swiper-slide:nth-child(3n) {
-  width: 20%;
-}
-
 
 /* .section-5{
   width: 100%;
