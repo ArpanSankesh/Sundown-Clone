@@ -557,6 +557,7 @@ section{
   height: 30vh;
 /* background-color: red; */
 display: flex;
+margin-bottom: 5vw;
 }
 
 .footer-left{
@@ -624,7 +625,7 @@ input::placeholder{
   color: #fff;
   border-bottom: 1px solid #ffffff30;
   line-height: 17rem;
-  /* margin-bottom: 3vw; */
+  /* margin-top: 10vw; */
 }
 
 .social-links{
