@@ -547,7 +547,7 @@ section{
 .swiper-img{
   display: flex;
   align-items: center;
-  margin-bottom:50px ;
+  
 }
 .swiper-slide img {
   height: 60px;
@@ -555,6 +555,7 @@ section{
 .swiper-slide {
   width: 30%;
   height: 300px;
+  text-align: justify;
 }
 
 /* .section-5{
