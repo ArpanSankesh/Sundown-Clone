@@ -38,3 +38,20 @@ function swiperJsAnimation() {
 
 swiperJsAnimation()
 pageFourAnimation()
+
+const menu = document.querySelector('.menu-btn');
+const hamMenu = document.querySelector('.ham-menu');
+const logo = document.querySelector('.logo');
+
+var flag = 0;
+menu.addEventListener('click', function(){
+  if(flag == 0){
+    hamMenu.style.top = 0;
+    logo.style.opacity = 0;
+    flag = 1;
+  }else{
+    hamMenu.style.top = '-100%';
+    logo.style.opacity = 1;
+    flag = 0 
+  }
+});
